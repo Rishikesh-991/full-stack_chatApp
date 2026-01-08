@@ -25,7 +25,9 @@ spec:
         env:
           - name: NODE_ENV
             value: production
-          - name: MONGO_URI
+          - name: PORT
+            value: "5001"
+          - name: MONGODB_URI
             value: "mongodb://root:root@mongodb:27017/chatapp?authSource=admin"
         resources:
             limits:
